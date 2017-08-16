@@ -1,0 +1,31 @@
+This program is compiled by Twlilght_Yujiang
+这个程序由Twlilght_Yujiang 构建编译
+
+Warning: This EXE program can only run on the DOS command line!
+警告：这个EXE程序只能在DOS命令行上运行！
+
+Prompt Info:Use the syntax of the command for this program
+提示信息：使用这个程序的命令的语法
+
+%***% = Variable Description
+* = Any character name
+
+%***% = 变量说明
+* = 任何字符名
+
+-------------------------------
+Command: -displayhelp
+Function: Run Program Help System
+命令: -help
+功能: 运行程序帮助系统
+-------------------------------
+Command: /showall
+Function: View all running processes,Display PID[Process ID]
+命令: -showall
+功能: 查看所有运行进程,显示PID[Process ID]
+-------------------------------
+Command: /killpid [PID Number]
+Function: End the process of specifying the PID
+命令: -killpid [PID Number]
+功能: 结束指定PID的程序进程
+-------------------------------
