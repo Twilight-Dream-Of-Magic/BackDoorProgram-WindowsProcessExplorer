@@ -12,8 +12,8 @@ MINGW_S_FILE=@g++ -S
 MINGW_COMPILE=@g++ -Wall -O2 -c
 MINGW_DEBUG_COMPILE=@g++ -Wall -fexceptions -g -c
 LINK_OBJECTIVES=g++ -static
- 
- .PHONY = all debug release clean LINK_OBJECTIVE LINK_OBJECTIVES
+
+.PHONY = all debug release clean LINK_OBJECTIVE LINK_OBJECTIVES
  
 all:
  
