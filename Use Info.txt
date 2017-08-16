@@ -19,12 +19,12 @@ Function: Run Program Help System
 命令: -displayhelp 或 /displayhelp
 功能: 运行程序帮助系统
 -------------------------------
-Command: /showall
+Command: -showall
 Function: View all running processes,Display PID[Process ID]
 命令: -showall
 功能: 查看所有运行进程,显示PID[Process ID]
 -------------------------------
-Command: /killpid [PID Number]
+Command: -killpid [PID Number]
 Function: End the process of specifying the PID
 命令: -killpid [PID Number]
 功能: 结束指定PID的程序进程
