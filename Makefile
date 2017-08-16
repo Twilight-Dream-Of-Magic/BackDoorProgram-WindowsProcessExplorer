@@ -1,4 +1,4 @@
-#This Easy Makefile
+#This Easy Windows Makefile
 
 HIDDEN_RUN_MODE=@echo off
 COMMAND_WINDOW_COLOR=@color
