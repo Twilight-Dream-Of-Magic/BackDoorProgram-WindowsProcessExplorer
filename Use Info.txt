@@ -1,31 +1,31 @@
 This program is compiled by Twlilght_Yujiang
-Õâ¸ö³ÌĞòÓÉTwlilght_Yujiang ¹¹½¨±àÒë
+è¿™ä¸ªç¨‹åºç”±Twlilght_Yujiang æ„å»ºç¼–è¯‘
 
 Warning: This EXE program can only run on the DOS command line!
-¾¯¸æ£ºÕâ¸öEXE³ÌĞòÖ»ÄÜÔÚDOSÃüÁîĞĞÉÏÔËĞĞ£¡
+è­¦å‘Šï¼šè¿™ä¸ªEXEç¨‹åºåªèƒ½åœ¨DOSå‘½ä»¤è¡Œä¸Šè¿è¡Œï¼
 
 Prompt Info:Use the syntax of the command for this program
-ÌáÊ¾ĞÅÏ¢£ºÊ¹ÓÃÕâ¸ö³ÌĞòµÄÃüÁîµÄÓï·¨
+æç¤ºä¿¡æ¯ï¼šä½¿ç”¨è¿™ä¸ªç¨‹åºçš„å‘½ä»¤çš„è¯­æ³•
 
 %***% = Variable Description
 * = Any character name
 
-%***% = ±äÁ¿ËµÃ÷
-* = ÈÎºÎ×Ö·ûÃû
+%***% = å˜é‡è¯´æ˜
+* = ä»»ä½•å­—ç¬¦å
 
 -------------------------------
-Command: -displayhelp
+Command: -displayhelp or /displayhelp
 Function: Run Program Help System
-ÃüÁî: -help
-¹¦ÄÜ: ÔËĞĞ³ÌĞò°ïÖúÏµÍ³
+å‘½ä»¤: -displayhelp æˆ– /displayhelp
+åŠŸèƒ½: è¿è¡Œç¨‹åºå¸®åŠ©ç³»ç»Ÿ
 -------------------------------
 Command: /showall
 Function: View all running processes,Display PID[Process ID]
-ÃüÁî: -showall
-¹¦ÄÜ: ²é¿´ËùÓĞÔËĞĞ½ø³Ì,ÏÔÊ¾PID[Process ID]
+å‘½ä»¤: -showall
+åŠŸèƒ½: æŸ¥çœ‹æ‰€æœ‰è¿è¡Œè¿›ç¨‹,æ˜¾ç¤ºPID[Process ID]
 -------------------------------
 Command: /killpid [PID Number]
 Function: End the process of specifying the PID
-ÃüÁî: -killpid [PID Number]
-¹¦ÄÜ: ½áÊøÖ¸¶¨PIDµÄ³ÌĞò½ø³Ì
+å‘½ä»¤: -killpid [PID Number]
+åŠŸèƒ½: ç»“æŸæŒ‡å®šPIDçš„ç¨‹åºè¿›ç¨‹
 -------------------------------
