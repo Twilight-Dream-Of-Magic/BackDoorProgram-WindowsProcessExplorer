@@ -13,6 +13,7 @@ MINGW_COMPILE=@g++ -Wall -O2 -c
 MINGW_DEBUG_COMPILE=@g++ -Wall -fexceptions -g -c
 LINK_OBJECTIVES=g++ -static
  
+ .PHONY = all debug release clean LINK_OBJECTIVE LINK_OBJECTIVES
  
 all:
  
@@ -63,8 +64,11 @@ BackDoorProgram-Process-Explorer-New-Debug.exe:".\\Objectives\\Debug\\BackDoorPr
     - $(HIDDEN_RUN_MODE)
     - $(COMMAND_WINDOW_COLOR) 04
     - $(LINK_OBJECTIVES) ".\\BackDoorProgram-Process-Explorer-New-Debug.o" -o ".\\Binary\\Debug\\BackDoorProgram-Process-Explorer-New-Debug.exe"
- 
- 
+
+
+
+
+
 release:
  
     - @make BackDoorProgram-Process-Explorer-New.i
@@ -98,9 +102,11 @@ BackDoorProgram-Process-Explorer-New.exe:.\\Objectives\\Release\\BackDoorProgram
     - $(HIDDEN_RUN_MODE)
     - $(COMMAND_WINDOW_COLOR) 08
     - $(LINK_OBJECTIVES) ".\\Objectives\\Release\\BackDoorProgram-Process-Explorer-New.o" -o ".\\Binary\\Release\\BackDoorProgram-Process-Explorer-New.exe"
- 
- 
- 
+
+
+
+
+
 clean:
  
     - $(HIDDEN_RUN_MODE)
