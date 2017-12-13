@@ -1,7 +1,7 @@
-#Notes (English)
+# Notes (English)
 
 
-##In C or C ++, there is programming, you need to use logical operators.
+## In C or C ++, there is programming, you need to use logical operators.
 
 * A Logical 1 for True, Correct, Exist, Execute, ......
 * A logical 0 for indicates False, Incorrect, Not Exist, Not Execute, ...
@@ -9,7 +9,7 @@
 * "!", "Not" <---> Logical Operator (NOT):
 * "!", "Not" only need to judge a value, the value is valid, the result returns false.
 * The same token, two values. When this value is invalid, the result returns true
-####Example code：
+#### Example code：
 ```
 ! 0 = //Logic 1
 ! 1 = //Logic 0
@@ -20,7 +20,7 @@
 * "&&", "and" <---> Logical operators (and):
 * "&&", "and" the left and right judgment judgment value, two values, all valid, the result returns true.
 * The same token, two values. When all are invalid, the result returns false
-####Example code：
+#### Example code：
 ```
 0 && 0 //Logic 0
 0 && 1 //Logic 0
@@ -35,7 +35,7 @@ true && true //true
 * "||", "or" <---> Logical operators (or):
 * "||", "or" "left and right judgment value, two values, only one is valid, the result returns true.
 * The same token, two values. When all are invalid, the result returns false
-####Example code：
+#### Example code：
 ```
 0 && 0 //Logic 0
 0 && 1 //Logic 1
@@ -47,7 +47,7 @@ true && false //true
 true && true //true
 ```
 
-###Expand knowledge：
+### Expand knowledge：
 
 * bool = boolean
 * "&&" is a logical AND operator, "||" is a logical OR operator, are logical operators, both sides can only be of type bool
@@ -97,7 +97,7 @@ true && true //true
 ```
 ------------
 
-###This ```strcmp()``` the function
+### This ```strcmp()``` the function
 
 ###### Used in C or C ++ to compare two strings. 
 ###### Start with the first character of the string, regardless of the length of the string.
@@ -110,7 +110,7 @@ true && true //true
 * //argc = Argument Counter 
 * //argv = Argument Vector
 
-####Example code：
+#### Example code：
 ```
 int main(int argc, char* argv[])
 {
