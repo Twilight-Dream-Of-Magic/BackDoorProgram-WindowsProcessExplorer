@@ -57,7 +57,7 @@ int main(int argc, char* argv[])
 
    strcmp()在程序设计的判断真假中0为假，非0为真
 
-   所以在if(!srcmp(A,B))这个语句中我们可以将A和B的关系设为两种，一种是A==B，另一种是A!=B
+   所以在if(!strcmp(A,B))这个语句中我们可以将A和B的关系设为两种，一种是A==B，另一种是A!=B
    当A==B时：strcmp(A,B)为0，!strcmp(A,B)为非0，if判断为真
    当A!=B时：strcmp(A,B)为非0，!strcmp(A,B)为0，if判断为假
   */

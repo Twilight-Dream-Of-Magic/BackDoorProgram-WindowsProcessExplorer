@@ -32,6 +32,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="BackDoorProgram-Process-Explorer-New.cpp" />
 		<Unit filename="ProcessExplorerMainCore.hpp" />
 		<Unit filename="ProgramMainHelpSystem.hpp" />
 		<Extensions>
