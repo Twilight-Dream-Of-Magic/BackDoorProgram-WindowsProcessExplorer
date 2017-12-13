@@ -35,3 +35,9 @@
 *.exe
 *.out
 *.app
+
+#Assemble Language Source Files
+*.s
+
+#C/C ++ Code Preprocessing Files
+*.i
