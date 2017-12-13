@@ -99,13 +99,13 @@ true && true //true
 
 ###This ```strcmp()``` the function
 
-######Used in C or C ++ to compare two strings. 
-######Start with the first character of the string, regardless of the length of the string.
-######```strcmp (" a "," b ");``` In this example statement. 
-######If so, compare the ASCII value of the string
-######When a > b, the return value > 0
-######When a = b, the return value = 0
-######When a < b, the return value < 0
+###### Used in C or C ++ to compare two strings. 
+###### Start with the first character of the string, regardless of the length of the string.
+###### ```strcmp (" a "," b ");``` In this example statement. 
+###### If so, compare the ASCII value of the string
+###### When a > b, the return value > 0
+###### When a = b, the return value = 0
+###### When a < b, the return value < 0
 
 * //argc = Argument Counter 
 * //argv = Argument Vector
