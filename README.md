@@ -1,7 +1,13 @@
 This is a simple command line program
 Used to simply manage the [executable] PID process on a Windows system, and if I can learn more about WindowsAPI's code knowledge, I can write better!
-Because this project has not let me satisfied, so you can help me as much as possible.
 
-ÕâÊÇÒ»¸ö¼òµ¥µÄÃüÁîĞĞ³ÌĞò
-ÓÃÓÚÔÚWindowsÏµÍ³ÉÏ¼òµ¥µØ¹ÜÀí[¿ÉÖ´ĞĞ] PID½ø³Ì£¬Èç¹ûÎÒ¿ÉÒÔ¸ü¶àµØÁË½âWindowsAPIµÄ´úÂëÖªÊ¶£¬ÎÒ¾Í¿ÉÒÔĞ´µÃ¸üºÃ£¡
-ÒòÎªÕâ¸öÏîÄ¿»¹Ã»ÈÃÎÒÂúÒâ£¬ËùÒÔÄã¿ÉÒÔ¾¡¿ÉÄÜµØ°ïÖúÎÒ¡£
+~~Because this project has not let me satisfied, so you can help me as much as possible.~~
+
+This project has been basically completed, but you can still help me, welcome to submit suggestions and better source code.
+
+è¿™æ˜¯ä¸€ä¸ªç®€å•çš„å‘½ä»¤è¡Œç¨‹åº
+ç”¨äºåœ¨Windowsç³»ç»Ÿä¸Šç®€å•åœ°ç®¡ç†[å¯æ‰§è¡Œ] PIDè¿›ç¨‹ï¼Œå¦‚æœæˆ‘å¯ä»¥æ›´å¤šåœ°äº†è§£WindowsAPIçš„ä»£ç çŸ¥è¯†ï¼Œæˆ‘å°±å¯ä»¥å†™å¾—æ›´å¥½ï¼
+
+~~å› ä¸ºè¿™ä¸ªé¡¹ç›®è¿˜æ²¡è®©æˆ‘æ»¡æ„ï¼Œæ‰€ä»¥ä½ å¯ä»¥å°½å¯èƒ½åœ°å¸®åŠ©æˆ‘ã€‚~
+
+è¿™ä¸ªé¡¹ç›®å·²ç»åŸºæœ¬å®Œæˆï¼Œä¸è¿‡ä½ ä»¬è¿˜æ˜¯å¯ä»¥å¸®åŠ©æˆ‘ï¼Œæ¬¢è¿æäº¤å»ºè®®å’Œæ›´å¥½çš„æºä»£ç ã€‚
