@@ -33,7 +33,7 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="BackDoorProgram-NewWindowsProcessExplorer.cpp" />
-		<Unit filename="WindowsProcessExplorerCore.hpp" />
+		<Unit filename="Header_Files/WindowsProcessExplorerCore.hpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

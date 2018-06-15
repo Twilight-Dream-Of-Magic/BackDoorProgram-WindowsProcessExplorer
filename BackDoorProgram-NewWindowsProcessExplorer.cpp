@@ -1,12 +1,4 @@
-﻿#include "WindowsProcessExplorerCore.hpp"
-#include "StdAfx.h"
-
-#include <iostream>
-#include <windows.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <tchar.h>
+﻿#include "Header_Files/WindowsProcessExplorerCore.hpp"
 
 using namespace std;
 
@@ -14,6 +6,13 @@ using namespace std;
 
 void QueryingCommandToHelp()
 {
+
+    std :: cout << "------------------------------" << endl;
+    std :: cout << "THIS PROGRAM HELP TEXT:" << endl;
+    std :: cout << "命令:-list \n功能:展示所有应用进程" << endl;
+    std :: cout << "命令:-aborted (%程序 进程ID%) \n功能:杀死特定应用进程ID [警告:在命令行模式使用!]" << endl;
+    std :: cout << "命令:-runfile 完整文件路径+命令行 \n功能:运行二进制文件，创建程序进程" << endl;
+    std :: cout << "------------------------------" << endl;
 
      AllocConsole();                            //This program creates a new console process in RAM 程序在RAM中，创建一个新的控制台进程
      SetConsoleTitle("Program Main Process");   //Modify the console's title 修改控制台的标题
@@ -29,7 +28,7 @@ void QueryingCommandToHelp()
       std :: cout << "-----Program Main Process-----" << endl;
 
 
-        lstrcpy(BufferSpace,_T("Please run in Dos CommandLine Mode.\n\nTHIS PROGRAM HELP TEXT:\n\nCommand:-showall\nFunction:Show all application processes id\nCommand:-killpid (%Program Pid%)\nFunction: Kill a specific application process id [Warning: Use in CMD.EXE Command Line Mode!]\n"));
+        lstrcpy(BufferSpace,_T("Please run in Dos CommandLine Mode.\n\nTHIS PROGRAM HELP TEXT:\n\nCommand: -list\nFunction: Show all application processes id\nCommand: -aborted (%Program Pid%)\nFunction: Kill a specific application process id [Warning: Use in Command Line Mode!]\nCommand: -runfile Full file path + command line \nFunction: Run binary file, create program process.\n"));
         getchar();
 
          WriteConsole(handle_ConsoleResult,BufferSpace,lstrlen(BufferSpace),&doubleWord_PointerConsole,NULL);
@@ -54,45 +53,70 @@ void QueryingCommandToHelp()
          WriteConsole(handle_ConsoleResult,BufferSpaceValue,lstrlen(BufferSpaceValue),&doubleWord_PointerConsole,NULL);
          */
 
-        std :: cout << "------------------------------" << endl;
-        std :: cout << "THIS PROGRAM HELP TEXT:" << endl;
-        std :: cout << "命令:-showall\n功能:展示所有应用进程" << endl;
-        std :: cout << "命令:-killpid (%程序 进程ID%)\n功能:杀死特定应用进程ID [警告:在CMD.EXE命令行模式使用!]" << endl;
-        std :: cout << "------------------------------" << endl;
-
        getchar();
        system("Pause");
 
       CloseHandle(handle_ConsoleResult); //程序释放了，来自RAM中创建的控制台进程 The program freed the console process created in RAM
       FreeConsole();
 
+      return;
+
 }
 
 /*Main Function*/
 
-int main(int Command_ID, char* Switch_ID[])
+int main(int Command_ID, char *Switch_ID[])
 {
+
     // In Command Line Run Mode
-    if(Command_ID == 2 && strcmp(Switch_ID[1],"/displayhelp") == 0)
+    if(Command_ID == 2 && strcmp(Switch_ID[1],"-help") == 0 || Command_ID == 2 && strcmp(Switch_ID[1],"--display-help") == 0)
     {
       QueryingCommandToHelp();
     }
-    if(Command_ID == 2 && strcmp(Switch_ID[1],"-showall") == 0)
+    if(Command_ID == 2 && strcmp(Switch_ID[1],"-list") == 0 || Command_ID == 2 && strcmp(Switch_ID[1],"--show-process") == 0)
     {
       ProcessList();
     }
-    if(Command_ID == 3 && strcmp(Switch_ID[1],"-killpid") == 0)
+    if(Command_ID == 3 && strcmp(Switch_ID[1],"-aborted") == 0 || Command_ID == 3 && strcmp(Switch_ID[1],"--kill-process") == 0)
     {
       // PidNumber = 100
       // atoi() = sting Value(PidNumber) --> int Value(PidNumber)
       // X:\>***.exe Switch_ID[1]=Command(-killpid) Switch_ID[2]=string(PidNumber)
+
       KillProcess(atoi(Switch_ID[2]));
     }
-    else
+    if(Command_ID == 3 && strcmp(Switch_ID[1],"-runfile") == 0 || Command_ID == 3 && strcmp(Switch_ID[1],"--create-process") == 0)
     {
-        QueryingCommandToHelp();
+        //LPSTR BinaryFileCommand[] = Switch_ID[2]; //Binary File Full Path Name and Command
+        //LPSTR CP[] = Switch_ID[4]; //Command Line Parameter
+
+
+        /*
+        char String_buffer[MAX_PATH];
+        LPSTR BinaryFileCommand;
+        std :: cout << "Please enter your command line." << endl;
+        std :: cin >> String_buffer;
+
+        BinaryFileCommand = String_buffer;
+
+        system("pause");
+        */
+
+        LPSTR BinaryFileCommand = Switch_ID[2];
+
+        printf("Argument vector outside function: %s\n",BinaryFileCommand);
+
+        CreateProcessFromBinaryFile(BinaryFileCommand);
+
+    }
+    else if (Command_ID == 1)
+    {
+        std :: cout << "Your method of using this program is incorrect, please use the" << " /help " << "command to view the manual." << endl;
+        std :: cout << "你的使用本程序的方法不正确，请使用" << " /help " << "命令查看手册。" << endl;
+        system("Pause");
+        return 0;
     }
 
-  return 0; //If this just command console the program, you can type this code here 如果只是命令控制台的程序，就可以在这里敲这个代码
+    return 0; //If this just command console the program, you can type this code here 如果只是命令控制台的程序，就可以在这里敲这个代码
 
 }

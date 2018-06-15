@@ -29,3 +29,8 @@ Function: End the process of specifying the PID
 命令: -killpid [PID Number]
 功能: 结束指定PID的程序进程
 -------------------------------
+Command: -runfile Full file path + command line
+Function: Run binary file, create a one program process.
+命令:-runfile 完整文件路径+命令行 
+功能:运行二进制文件，创建程序进程
+-------------------------------
