@@ -111,8 +111,8 @@ int main(int Command_ID, char *Switch_ID[])
     }
     else if (Command_ID == 1)
     {
-        std :: cout << "Your method of using this program is incorrect, please use the" << " /help " << "command to view the manual." << endl;
-        std :: cout << "你的使用本程序的方法不正确，请使用" << " /help " << "命令查看手册。" << endl;
+        std :: cout << "Your method of using this program is incorrect, please use the" << " -help " << "command to view the manual." << endl;
+        std :: cout << "你的使用本程序的方法不正确，请使用" << " -help " << "命令查看手册。" << endl;
         system("Pause");
         return 0;
     }
